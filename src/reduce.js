@@ -11,6 +11,10 @@
  */
 let arr = [{ a: 100 }, { a: 20 }, { a: -10 }];
 let sum = arr.reduce(
+    //initialValue为0
+    //previousValue 前一次调用callbackfn得到的返回值 
+    //用reduce()时提供了initialValue，previousValue取值则为initialValue，currentValue则取值列表中的第一个值。
+    //currentValue（目录中正在处理的元素）
   (previousValue, currentValue) => previousValue + currentValue.a,
   0
 );
